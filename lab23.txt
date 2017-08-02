@@ -1,0 +1,36 @@
+1.	SELECT * from Customers
+
+2.	SELECT distinct country from Customers
+
+3.	SELECT * from Customers
+	where customerid like 'BL%'
+
+4.	SELECT * from Orders
+	limit 100
+
+5.	select * from customers
+	where postalcode in ('1010', '3012','12209', '05023')
+
+6.	select * from orders
+	where ShipRegion is not null
+
+7.	select * from orders
+	order by shipcountry, shipcity
+
+8.	insert into customers
+	values ('bean burrito', 'Jimmy Doe', 'Roller', 'Elm St', 'Detroit', null, '48220', 'USA', '23409123', '23048823')
+
+9.	update orders
+	set shipregion='EuroZone'
+	where shipcountry='France'
+
+10.	delete from order_details
+	where quantity=1
+
+11.	select avg(quantity), max(quantity), min(quantity) from order_details
+
+12.	select avg(quantity), max(quantity), min(quantity) from order_details
+	group by orderid
+
+13.	select customerid from orders
+	where orderid = '10290'
